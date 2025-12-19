@@ -6,10 +6,14 @@ backend/node_modules/
 frontend/Quiz-Arena/.env
 backend/.env
 
-# Builds
-frontend/Quiz-Arena/dist/
-frontend/Quiz-Arena/build/
-backend/dist/
+/frontend/Quiz-Arena/dist/
+/frontend/Quiz-Arena/.vite/
+/frontend/Quiz-Arena/.env
+/frontend/Quiz-Arena/node_modules/
+
+# Backend specifics
+/backend/node_modules/
+/backend/.env
 
 # Logs
 npm-debug.log*

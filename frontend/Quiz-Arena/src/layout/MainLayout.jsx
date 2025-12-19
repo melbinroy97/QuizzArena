@@ -1,0 +1,15 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { Outlet } from "react-router-dom";
+
+export default function MainLayout() {
+  return (
+    <>
+      <Navbar />
+      <div className="pt-20 min-h-screen">
+        <Outlet />
+      </div>
+      <Footer />
+    </>
+  );
+}
