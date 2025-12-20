@@ -26,10 +26,8 @@ import ReviewQuiz from "./pages/session/ReviewQuiz";
 function App() {
   return (
     <>
-      <Navbar />
 
       {/* offset for fixed navbar */}
-      <div className="pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -105,14 +103,14 @@ function App() {
             path="/dashboard"
             element={
               <ProtectedRoute>
+                <Navbar />
                 <Dashboard />
+                <Footer />
               </ProtectedRoute>
             }
           />
         </Routes>
-      </div>
 
-      <Footer />
     </>
   );
 }
